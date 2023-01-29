@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Crimson Text", sans-serif;
+  /* background-image: url('image/background.jpg'); */
+  background: linear-gradient(#febeae, #fd939c, #af3789, #38164c);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: left;
+  margin: 3rem 0 1rem 3rem;
+}
+
+html {
+  font-size: 60%;
+  font-family: "Crimson Text", sans-serif;
+}
+
+.home_div {
+  display: grid;
+  place-items: center;
+}
+
+.music_container {
+  background-color: rgb(252, 198, 186);
+  /* margin-top:0; */
+  width: 35rem;
+  height: 55rem;
+  border-radius: 3rem;
+  box-shadow: 0 1.2rem 4rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.music_container #title {
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
+  color: #171717;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 2rem 0 0.5rem 0;
+}
+
+.music_container #artist {
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  color: #585858;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  font-weight: 300;
+}
+
+.img_container {
+  width: 25rem;
+  height: 25rem;
+  margin: auto;
+}
+
+img {
+  /* to make the img object fit and circle */
+  box-shadow: 0 1rem 2rem 0.1rem rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+}
+.music_controls {
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 5rem;
+  align-items: center;
+}
+.music_controls .fa-solid {
+  color: #111111;
+  font-size: 2rem;
+  cursor: pointer;
+  filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
+}
+
+.music_controls .main-button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #171717;
+  color: rgb(252, 198, 186);
+  box-shadow: 0 1rem 2rem 0.1rem rgba(0, 0, 0, 0.4);
+  font-size: 1.4rem;
+  /* adding display flex to make the play button in the center of the round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music_controls .fa-play:hover {
+  background-color: rgb(252, 198, 186);
+  color: #171717;
+  font-size: 2rem;
+  box-shadow: 0 1rem 2rem 0.1rem rgba(0, 0, 0, 0.4);
+}
+
+/*adding animation to the image  */
+.anime {
+  animation: alive 6s linear infinite;
+}
+
+@keyframes alive {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

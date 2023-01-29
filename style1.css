@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Crimson Text", sans-serif;
+  background-image: url("image/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.main_head h1 {
+  text-align: center;
+  margin-top: 3rem;
+}
+.main_head p {
+  text-align: center;
+  font-size: large;
+}
+.total_block1 {
+  margin: 3rem 8rem 0 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.total_block2 {
+  margin: 3rem 17rem 5rem 17rem;
+  display: flex;
+  justify-content: space-between;
+}
+.sections {
+  background: linear-gradient(#fda6c3, #983f4f);
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1rem;
+  box-shadow: 0 2rem 6rem 1.3rem rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+  text-align: center;
+  align-content: center;
+}
+.sections img {
+  margin: 0.4rem;
+  width: 10rem;
+  height: 8rem;
+  border-radius: 0.5rem;
+}
+.sections img:hover {
+  /* align-content:  center; */
+  width: 10.5rem;
+  height: 8.5rem;
+  border-radius: 0.5rem;
+  opacity: 0.9;
+}
+.display_img {
+  margin: 0.2rem;
+  display: flex;
+  justify-content: center;
+}
+.sections h3 {
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+  color: #171717;
+  font-size: 1.2rem;
+  margin-top: -1rem;
+}
+.explore_button {
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  background-color: #7a1045;
+  color: rgb(232, 196, 153);
+  border: #942a72;
+  margin-bottom: 0.5rem;
+}
+.explore_button:hover {
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  background-color: rgb(232, 196, 153);
+  color: #630c48;
+  border: #942a72;
+}
